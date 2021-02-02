@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Fe203"
+Date "2020-03-13"
+Rev "V01"
+Comp "Dynamics UPC Manresa"
+Comment1 "Designer: Llorenç Garcia Merino"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5700 2600 4700 2600
+Wire Wire Line
+	4700 2700 5700 2700
+Wire Wire Line
+	4700 2800 5700 2800
+Wire Wire Line
+	4700 2900 5700 2900
+Wire Wire Line
+	5700 3000 4700 3000
+Wire Wire Line
+	4700 3100 5700 3100
+Wire Wire Line
+	5700 3200 4700 3200
+Wire Wire Line
+	5700 3800 4700 3800
+Wire Wire Line
+	4700 3900 5700 3900
+Wire Wire Line
+	5700 4000 4700 4000
+Wire Wire Line
+	4700 4100 5700 4100
+Wire Wire Line
+	5700 4200 4700 4200
+Wire Wire Line
+	4700 4300 5700 4300
+Wire Wire Line
+	5700 4400 4700 4400
+Text GLabel 6800 4400 2    50   Input ~ 0
+DOT2
+Text GLabel 4900 4500 2    50   Input ~ 0
+DOT2
+Text GLabel 6800 3800 2    50   Input ~ 0
+GND2
+Wire Wire Line
+	6800 3800 6700 3800
+Wire Wire Line
+	6600 3900 6700 3900
+Wire Wire Line
+	6700 3900 6700 3800
+Connection ~ 6700 3800
+Wire Wire Line
+	6700 3800 6600 3800
+Wire Wire Line
+	6800 4400 6600 4400
+Text GLabel 4900 4600 2    50   Input ~ 0
+GND2
+Wire Wire Line
+	4900 4500 4700 4500
+Wire Wire Line
+	4700 4600 4900 4600
+Text GLabel 6800 2600 2    50   Input ~ 0
+GND1_1
+Wire Wire Line
+	6600 2600 6800 2600
+Text GLabel 6800 2700 2    50   Input ~ 0
+GND1_2
+Wire Wire Line
+	6600 2700 6800 2700
+Text GLabel 6800 2800 2    50   Input ~ 0
+GND1_3
+Wire Wire Line
+	6600 2800 6800 2800
+Text GLabel 4900 3400 2    50   Input ~ 0
+GND1_1
+Text GLabel 4900 3500 2    50   Input ~ 0
+GND1_2
+Text GLabel 6800 3200 2    50   Input ~ 0
+DOT1
+Wire Wire Line
+	4900 3400 4700 3400
+Wire Wire Line
+	4700 3500 4900 3500
+Wire Wire Line
+	6800 3200 6600 3200
+Text GLabel 4900 3600 2    50   Input ~ 0
+GND1_3
+Wire Wire Line
+	4700 3600 4900 3600
+Text GLabel 4900 3300 2    50   Input ~ 0
+DOT1
+Wire Wire Line
+	4700 3300 4900 3300
+$Comp
+L fe203:20_pin_pcb_connector CON1
+U 1 1 5E6FF094
+P 4100 2900
+F 0 "CON1" H 4300 3600 50  0000 C CNN
+F 1 "pcb_connector" H 4300 3500 50  0000 C CNN
+F 2 "fe203:20_pin_pcb_connector" H 4100 2900 50  0001 C CNN
+F 3 "" H 4100 2900 50  0001 C CNN
+F 4 "T821120A1S100CEU" H 4300 3400 50  0000 C CNN "Ref fab"
+	1    4100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L fe203:single_numeric_display D2
+U 1 1 5E7003F4
+P 6200 4000
+F 0 "D2" H 6200 4600 50  0000 C CNN
+F 1 "7_segment" H 6200 4500 50  0000 C CNN
+F 2 "fe203:single_numeric_display" H 6100 4400 50  0001 C CNN
+F 3 "SC23-11EWA" H 6200 4400 50  0000 C CNN
+	1    6200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L fe203:three_numeric_display D1
+U 1 1 5E701025
+P 6200 2800
+F 0 "D1" H 6200 3400 50  0000 C CNN
+F 1 "7_segment" H 6200 3300 50  0000 C CNN
+F 2 "fe203:three_numeric_display" H 6200 3250 50  0001 C CNN
+F 3 "" H 6200 3250 50  0001 C CNN
+F 4 "LT0565SRWK" H 6200 3200 50  0000 C CNN "Ref fab"
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
